@@ -3,6 +3,7 @@
 ## Overview
 This PHP script is designed to clean up specific tables in a WordPress database using MySQL queries. It targets the actionscheduler_actions table to delete entries with statuses of 'canceled', 'failed', and 'complete'. 
 Additionally, it can optionally truncate the actionscheduler_logs table to clear all logs.
+The need for this script has arisen after WordPress' failure to clean up the database automatically brought my database to the ridiculous size of 3Gb. I wrote about it [here](https://fabienb.blog/almost-blew-up-wordpress-blog-with-wrong-setting/) 
 
 ## Features
 - Dynamic Table Prefix: Automatically retrieves the table prefix from wp-config.php, making it compatible with any custom prefixes.
